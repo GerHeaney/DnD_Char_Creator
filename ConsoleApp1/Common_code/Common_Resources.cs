@@ -1,0 +1,1 @@
+﻿enum Skills { Perception,Athletics,Acrobatics}; // And lots more

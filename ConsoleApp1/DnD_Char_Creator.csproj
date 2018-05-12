@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Abilities.cs" />
     <Compile Include="Common_code\Common_Resources.cs" />
+    <Compile Include="Interfaces\I_Race.cs" />
     <Compile Include="Interfaces\I_Class.cs" />
     <Compile Include="Interfaces\I_Character.cs" />
     <Compile Include="Character_class.cs" />

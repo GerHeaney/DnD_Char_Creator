@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp1.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace ConsoleApplication1
     // For a simple example i'll use strings just as dummies for the classes i'd create
     // Each race has ability modifiers to add to their scores. They also get some traits and
     // skill proficiencies
-    class Character_Race
+    class Character_Race : I_Race
     {
         string[] races = { "Human", "Dwarf", "Elf", "Half-Orc", "Gnome", "Halfling", "Tiefling", "Dragonborn" };
         string my_race;
@@ -33,10 +34,14 @@ namespace ConsoleApplication1
         }
 
         // Will update this further as needed
-        public string toString()
+        public string to_string()
         {
             string return_string = string.Format("Character race is {0}\n", my_race);
             return return_string;
+        }
+        public void set_traits()
+        {
+
         }
     }
 }

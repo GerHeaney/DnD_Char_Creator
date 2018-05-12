@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Interfaces
 {
-    interface I_Class
+    interface I_Race
     {
-        void set_health();
-        void set_proficiencies();
-        void set_skills();
+        void set_traits();
         string to_string();
         void randomize(Random rand);
     }

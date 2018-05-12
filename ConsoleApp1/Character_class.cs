@@ -11,9 +11,9 @@ namespace ConsoleApplication1
     {
         string[] classes = { "Barbarian", "Bard", "Cleric", "Fighter", "Monk", "Paladin", "Ranger", "Rogue",
                             "Sorcerer","Warlock","Wizard"};
-        string my_class;
-        int health;
-        Skills[] my_skills;
+        private string my_class;
+        private int health;
+        private Skills[] my_skills;
         public string My_class
         {
             get
@@ -48,7 +48,7 @@ namespace ConsoleApplication1
         }
 
         // Will update this further as needed
-        public string toString()
+        public string to_string()
         {
             string return_string = string.Format("Character class is {0}\n", my_class);
             return return_string;

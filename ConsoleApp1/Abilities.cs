@@ -1,12 +1,13 @@
-﻿using System;
+﻿using ConsoleApp1.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace ConsoleApp1
 {
-    class Abilities
+    class Abilities : I_Abilities
     {
         // Character stats for determining modifiers
         int strength;
@@ -120,7 +121,7 @@ namespace ConsoleApplication1
         }
 
         // for ease of debugging I always add a toString function to my code
-        public string toString()
+        public string to_string()
         {
             string abilities_string = "Abilities are \n";
             abilities_string += string.Format("Strength : {0}\n",strength);

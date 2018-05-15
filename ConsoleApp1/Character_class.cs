@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace ConsoleApp1
 {
     class Character_class : I_Class
     {
@@ -13,7 +13,7 @@ namespace ConsoleApplication1
                             "Sorcerer","Warlock","Wizard"};
         private string my_class;
         private int health;
-        private Skills[] my_skills;
+        private Skills_enum[] my_skills;
         public string My_class
         {
             get

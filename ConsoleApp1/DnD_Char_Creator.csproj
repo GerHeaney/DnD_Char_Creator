@@ -43,22 +43,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abilities.cs" />
+    <Compile Include="Race\Character_Race.cs" />
     <Compile Include="Common_code\Common_Resources.cs" />
+    <Compile Include="Race\Human.cs" />
     <Compile Include="Interfaces\I_Race.cs" />
     <Compile Include="Interfaces\I_Class.cs" />
     <Compile Include="Interfaces\I_Character.cs" />
     <Compile Include="Character_class.cs" />
-    <Compile Include="Character_Race.cs" />
     <Compile Include="Action.cs" />
     <Compile Include="Character_Builder.cs" />
+    <Compile Include="Interfaces\I_Abilities.cs" />
+    <Compile Include="Interfaces\I_Builder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Character\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

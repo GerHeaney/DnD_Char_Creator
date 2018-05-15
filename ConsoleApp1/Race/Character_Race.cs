@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace ConsoleApp1
 {
     // For a simple example i'll use strings just as dummies for the classes i'd create
     // Each race has ability modifiers to add to their scores. They also get some traits and

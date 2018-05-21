@@ -17,27 +17,23 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void close_button_Click(object sender, EventArgs e)
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void clearButton_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void backgroundButton_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void showButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
         }

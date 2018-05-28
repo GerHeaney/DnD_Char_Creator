@@ -11,7 +11,7 @@ namespace WindowsFormsApp1.Attributes
         private int base_value;
         private int base_multiplier;
 
-        public Base_Attribute(int added_value, int added_multiplier)
+        public Base_Attribute(int added_value, int added_multiplier =0)
         {
             base_value = added_value;
             base_multiplier = added_multiplier;

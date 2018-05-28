@@ -10,6 +10,8 @@ namespace WindowsFormsApp1.Attributes
     {
         private List<Raw_Bonus> raw_bonuses;
         private List<Final_Bonus> final_bonuses;
+
+        protected int final_value;
         public Attribute(int added_value, int added_multiplier) : base(added_value, added_multiplier)
         {
             raw_bonuses = new List<Raw_Bonus>();
@@ -37,22 +39,28 @@ namespace WindowsFormsApp1.Attributes
                 final_bonuses.Remove(bonus);
             }
         }
-        public int calculate_attribute_value()
+
+        protected void apply_raw_bonuses()
         {
-            int attribute_value = Base_value;
             int raw_bonus_value =0;
             int raw_bonus_multiplier=0;
-            int final_bonus_value=0;
-            int final_bonus_multiplier=0;
 
-          foreach(var bonus in raw_bonuses)
+            foreach (var bonus in raw_bonuses)
             {
                 raw_bonus_value += bonus.Base_value;
                 raw_bonus_multiplier += bonus.Base_value;
 
             }
-            attribute_value += raw_bonus_value;
-            attribute_value *= (1 + raw_bonus_multiplier);
+            final_value += raw_bonus_value;
+            final_value *= (1 + raw_bonus_multiplier);
+
+        }
+
+        protected void apply_final_bonuses()
+        {
+            int final_bonus_value=0;
+            int final_bonus_multiplier=0;
+
 
             foreach (var bonus in final_bonuses)
             {
@@ -60,9 +68,17 @@ namespace WindowsFormsApp1.Attributes
                 final_bonus_multiplier += bonus.Base_value;
 
             }
-            attribute_value += final_bonus_value;
-            attribute_value *= (1 + final_bonus_multiplier);
-            return attribute_value;
+            final_value += final_bonus_value;
+            final_value *= (1 + final_bonus_multiplier);
+        }
+
+        public virtual int calculate_attribute_value()
+        {
+            final_value = Base_value;
+         
+            apply_raw_bonuses();
+            apply_final_bonuses();
+            return final_value;
         }
         public int get_final_Value()
         {
@@ -70,4 +86,3 @@ namespace WindowsFormsApp1.Attributes
         }
     }
 }
-

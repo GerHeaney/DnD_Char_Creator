@@ -45,11 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities.cs" />
+    <Compile Include="Action.cs" />
     <Compile Include="Attributes\Attribute.cs" />
     <Compile Include="Attributes\Base_Attribute.cs" />
     <Compile Include="Attributes\Dependant_Attribute.cs" />
     <Compile Include="Attributes\Final_Bonus.cs" />
     <Compile Include="Attributes\Raw_Bonus.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="Character_Builder.cs" />
+    <Compile Include="Character_class.cs" />
+    <Compile Include="Common_Resources.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,11 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Game_Manager.cs" />
+    <Compile Include="Interfaces\I_Abilities.cs" />
+    <Compile Include="Interfaces\I_Builder.cs" />
+    <Compile Include="Interfaces\I_Character.cs" />
+    <Compile Include="Interfaces\I_Class.cs" />
+    <Compile Include="Interfaces\I_Race.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
